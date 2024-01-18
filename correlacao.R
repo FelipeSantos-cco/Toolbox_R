@@ -1,4 +1,4 @@
-matrix_correlacao <- function(dados.ok){
+matris_correlacao <- function(dados.ok){
   # -> Pacotes Usados
   library(ggplot2)
   library(ggcorrplot)
