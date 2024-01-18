@@ -1,4 +1,4 @@
-matris <- function(dados.ok){
+matriz <- function(dados.ok){
   # -> Pacotes Usados
   library(ggplot2)
   library(ggcorrplot)
