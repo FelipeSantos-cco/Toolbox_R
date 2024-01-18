@@ -21,3 +21,31 @@ matris <- function(dados.ok){
   })
   
 }
+
+rank <- function(dados.ok, top = 10, filtro = NULL){
+  #install.packages("lares")
+  library(lares)
+  
+  if(is.null(filtro)){
+    corr_cross(
+      dados.ok,
+      rm.na = T,
+      grid = T,
+      top = top,
+      max_pvalue = 0.05,
+      quiet = T
+    )
+  } else {
+    corr_cross(
+      dados.ok,
+      contains = filtro,
+      rm.na = T,
+      grid = T,
+      top = top,
+      max_pvalue = 0.05,
+      quiet = T
+    )
+  }
+  
+  
+}
